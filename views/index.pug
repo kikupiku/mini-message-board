@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  h3 These are your messages:
+
+  div(class='container')
+    each value in messages
+      div(class='post-it'): h3(class='user')= value.user
+           h2(class='message')= value.text
+           p(class='date')= 'added: ' + value.added.getDate() + '.' + value.added.getMonth() + '.' + value.added.getFullYear()
