@@ -18,7 +18,6 @@ h1 {
 }
 
 .redirect {
-  box-shadow: 0 0 5px -1px rgba(0,0,0,1);
   float: right;
   margin-right: 40px;
   height: 20px;
@@ -30,6 +29,7 @@ h1 {
   font-weight: bold;
   text-decoration: none;
   padding: 5px;
+  border: 3px outset white;
 }
 
 .new {
@@ -40,9 +40,13 @@ h1 {
   background: rgb(122,150,145);
 }
 
+button {
+  margin-top: 20px;
+}
+
 .redirect:active {
-  box-shadow: 0 0 5px -1px rgba(0,0,0,2);
   transform:translate(1px, 1px);
+  border: 3px inset white;
 }
 
 .post-it {
@@ -64,4 +68,15 @@ h1 {
   position: absolute;
   bottom: 10px;
   left: 15px;
+}
+
+.name-field {
+  margin: 20px 0 20px 41px;
+  border-radius: 5px;
+  border: 1px solid rgb(169, 169, 169);
+}
+
+.message-field {
+  margin-left: 20px;
+  border-radius: 5px;
 }
