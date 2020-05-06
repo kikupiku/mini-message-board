@@ -14,9 +14,7 @@
     "http-errors": "~1.6.3",
     "morgan": "^1.9.1",
     "node-sass-middleware": "^0.11.0",
-    "nodemon": "^1.18.10"
-  },
-  "devDependencies": {
+    "nodemon": "^1.18.10",
     "pug": "^2.0.4"
   },
   "engines": {
