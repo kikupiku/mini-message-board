@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  a(href='/new' class='redirect btn new') NEW MESSAGE
   h1= title
   h3 These are your messages:
 
@@ -8,4 +9,4 @@ block content
     each value in messages
       div(class='post-it'): h3(class='user')= value.user
            h2(class='message')= value.text
-           p(class='date')= 'added: ' + value.added.getDate() + '.' + value.added.getMonth() + '.' + value.added.getFullYear()
+           p(class='date')= 'added: ' + value.added.getDate() + '.' + (value.added.getMonth() + 1) + '.' + value.added.getFullYear()

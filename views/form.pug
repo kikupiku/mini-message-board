@@ -1,0 +1,17 @@
+extends layout
+
+block content
+
+  a(href='/' class='redirect btn back') GO BACK
+  h1= title
+
+  form(method='POST' action='/new' id='new-message')
+    fieldset
+      legend Create a new message
+      txt Your name
+      input(type='text' name='name')/
+      br
+      txt Your message
+      textarea(name='message' form='new-message')
+      br
+      button(class='btn new') SUBMIT
